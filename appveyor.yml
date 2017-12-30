@@ -17,11 +17,12 @@ dotnet_csproj:
 before_build:
 - cmd: nuget restore
 build:
+  publish_nuget: true
   verbosity: minimal
 deploy:
 - provider: NuGet
   api_key:
-    secure: CR0EKfX7eaCYez8Q04w0LwumNzOY/L30km0fC6Rt9PfiijO0S/PtmQoqKzeyVhBc
+    secure: UwMD8RbvisMryrIyfS8r1t2Rlsz2LioQJG4iwBNwiTWfStErogtAhba+iRXzW4SM
   skip_symbols: true
   artifact: /.*\.nupkg/
   on:
