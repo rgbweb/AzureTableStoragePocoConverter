@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>AzureTableStoragePocoConverter</PackageId>
+    <Authors>rgbweb</Authors>
+    <Company>rgbweb</Company>
+    <Product />
+    <Description>Convert between Azure Storage TableEntity and .NET POCO objects with help of some Attributes and a bit of Reflection</Description>
+    <PackageProjectUrl>https://github.com/rgbweb/AzureTableStoragePocoConverter</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/rgbweb/AzureTableStoragePocoConverter/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageIconUrl />
+    <RepositoryUrl></RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.0.1-local</Version>
+    <AssemblyVersion>0.0.1.0</AssemblyVersion>
+    <FileVersion>0.0.1.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+    <PackageReference Include="WindowsAzure.Storage" Version="8.1.4" />
+  </ItemGroup>
+
+</Project>
