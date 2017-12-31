@@ -4,9 +4,13 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>AzureTableStoragePocoConverter</PackageId>
     <Authors>rgbweb</Authors>
-    <Company>rgbweb</Company>
+    <Company></Company>
     <Product />
-    <Description>Convert between Azure Storage TableEntity and .NET POCO objects with help of some Attributes and a bit of Reflection</Description>
+    <Description>.NET Standard 2.0 library with helpers to convert your POCO objects to Azure Table Storage objects of type `ITableEntity` or `DynamicTableEntity` and vice versa.
+
+It supports saving complex classes by converting not natively supported property types into JSON strings.
+
+There is no need to have dedicated properties called PartitionKey and RowKey. Just decorate your properties with the `[PartitionKey]` and `[RowKey]` attributes. There is also an optional `[ETag]` attribute to read the ETag and ensure optimistic concurrency when writing it back. You can decorate a property with the `[Timestamp]` attribute to read the auto-generated time stamp from your table entity.</Description>
     <PackageProjectUrl>https://github.com/rgbweb/AzureTableStoragePocoConverter</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/rgbweb/AzureTableStoragePocoConverter/blob/master/LICENSE</PackageLicenseUrl>
     <PackageIconUrl />
@@ -15,6 +19,8 @@
     <Version>0.0.1-local</Version>
     <AssemblyVersion>0.0.1.0</AssemblyVersion>
     <FileVersion>0.0.1.0</FileVersion>
+    <PackageTags>Microsoft, Azure, Storage, Table, Tables, POCO, Converter</PackageTags>
+    <PackageReleaseNotes>https://github.com/rgbweb/AzureTableStoragePocoConverter/releases</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
